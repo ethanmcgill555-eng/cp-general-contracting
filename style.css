@@ -1,4 +1,11 @@
 * {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') center/cover;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 42px;
   margin-bottom: 10px;
 }
 
@@ -17,9 +24,10 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   margin-top: 30px;
+  justify-items: center;
 }
 
 .card {
@@ -28,6 +36,9 @@
   border-radius: 10px;
   background: #fff;
   transition: 0.2s;
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
 }
 
 .card:hover {
